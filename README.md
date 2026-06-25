@@ -75,8 +75,8 @@ Sistemi çalıştırabilmek için aşağıdaki yazılımların kurulu olması ge
 ## 1. Projeyi Klonlayın
 
 ```bash
-git clone <repo-link>
-cd proje-klasoru
+git clone https://github.com/eessrac/ai-project-management-system.git
+cd ai-project-management-system
 ```
 
 ---
@@ -98,7 +98,6 @@ npm install
 ### Kullanılan Başlıca Paketler
 
 ```bash
-npm install express cors dotenv pg sequelize
 npm install bcrypt jsonwebtoken
 npm install socket.io
 npm install multer
@@ -116,7 +115,7 @@ PORT=5000
 
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=project_management_db
+DB_NAME=pgt_db
 DB_USER=postgres
 DB_PASSWORD=your_password
 
@@ -196,7 +195,7 @@ http://localhost:5173
 1. PostgreSQL üzerinde yeni bir veritabanı oluşturun:
 
 ```sql
-CREATE DATABASE project_management_db;
+CREATE DATABASE pgt_db;
 ```
 
 2. Proje içerisindeki SQL dosyalarını çalıştırarak tabloları oluşturun.
@@ -204,7 +203,7 @@ CREATE DATABASE project_management_db;
 Örnek:
 
 ```bash
-psql -U postgres -d project_management_db -f database.sql
+psql -U postgres -d pgt_db -f database.sql
 ```
 
 ---
